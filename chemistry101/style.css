@@ -1,0 +1,122 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #00001a;
+    /*border: red solid 2px;*/
+    margin: 4px;
+    background: #f4f0f2;
+}
+
+#tocimage{
+  display: -webkit-flex;
+  display: flex;
+  margin:auto;
+  width: 95%;
+}
+#left{
+  /*Question: why images will become smaller if I squeeze the window width even
+  if I already set the width to 300 px?
+  When I squeeze the window width, why only images become smaller rather than
+  the TOC text?
+  */
+  margin-right: 0;
+  width: 300px;
+  min-width: 100px;
+}
+#right{
+  margin-left: 0;
+  min-width: 100px;
+  width: 300px;
+}
+#ptable{
+  /*max-width: 72%;
+  width: 500px;*/
+}
+#bottle{
+  /*max-width: 82%;
+  width: 500px;*/
+}
+.title{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /*color: white; */
+  /*Question why above code doesn't make title h1 white, instead I need to add
+  this to the below <.title h1> style*/
+  background-color: #ba216e;
+  text-align: center;
+  min-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+.title h1{
+background-color: inherit;
+color: White;
+/* Question from above: why I have to add above font color here to make title
+h1 white?*/
+}
+.image-bucket{
+  /*Question: Which is the best way to center an image?
+  1) creat a container/bucket for the image, then text-align its content which
+  is the image to center?
+  2) or use
+  display: block; margin: auto;
+  to change the image to a block element then center it by auto margin like for
+  div element?
+  or is there any other better way?
+  Thanks.*/
+  text-align: center;
+  margin: auto;
+  /*Question: why the auto margin will also make the list <ul> in TOC center?*/
+}
+.image{
+  width: 72%;
+  max-width: 700px;
+}
+.h2title{
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 52%;
+  font-size: 30px;
+}
+.h3title{
+  width: 62%;
+  max-width: 900px;
+  margin: auto;
+  font-size: 25px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.h4title{
+  width: 72%;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.textcontent{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 72%;
+  margin: auto;
+  text-align: justify;
+  font-size: 18px;
+  max-width: 900px;
+}
+.list{
+  font-size: 19px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  /*margin: auto;*/
+  /*Why the auto margin in here will make the image in TOC away from the list
+  after I already define the margin of the container of the image in ID left and
+  right?*/
+}
+site{
+  /*Question: I read from W3Scholl it said default is italic, but
+  it seems like the default in chrome is not italic, that's why I added this*/
+  /*font-style: italic;*/
+  /*QUestion: I tried to use site element, but upon validation, error showed:
+  Element site not allowed as child of element div in this context. (Suppressing
+  further errors from this subtree.)
+  So I deleted all site elements. But I am confused why this error happened?
+  */
+}
